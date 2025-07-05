@@ -8,6 +8,6 @@ public interface OrchidsService {
     List<OrchidDto> getAllOrchids();
     OrchidDto getDetailOrchidById(String orchidId);
     void createOrchid(OrchidDto orchidDto);
-    void deleteOrchid(Long orchidId);
+    void deleteOrchid(String orchidId);
     void updateOrchid(OrchidDto orchidDto);
 }

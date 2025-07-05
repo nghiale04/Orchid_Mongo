@@ -53,7 +53,7 @@ public class OrchidController {
     }
 
     @DeleteMapping("/{orchidId}")
-    public ResponseEntity<ResponseDTO> deleteOrchid(@PathVariable Long orchidId) {
+    public ResponseEntity<ResponseDTO> deleteOrchid(@PathVariable String orchidId) {
         orchidsService.deleteOrchid(orchidId);
         return ResponseEntity.ok(
                 ResponseDTO.builder()

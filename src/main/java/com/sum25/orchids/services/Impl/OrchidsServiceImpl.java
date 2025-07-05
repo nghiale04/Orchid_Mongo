@@ -79,8 +79,8 @@ public class OrchidsServiceImpl implements OrchidsService {
     }
 
     @Override
-    public void deleteOrchid(Long orchidId) {
-        orchidRepository.deleteById(orchidId.toString());
+    public void deleteOrchid(String orchidId) {
+        orchidRepository.deleteById(orchidId);
     }
 
     @Override
